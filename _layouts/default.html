@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="text/html">
-    <title>{{ page.title }}</title>
-</head>
-<body>
+<html ⚡ lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
     {{ content }}
-</body>
+
+    {% comment %}
+        {% include analytics.html %}
+    {% endcomment %}
+  </body>
 </html>
